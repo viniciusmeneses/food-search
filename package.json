@@ -1,0 +1,43 @@
+{
+  "name": "food-search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/app.js",
+  "scripts": {
+    "dev": "gulp --env=dev",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vini23hot/food-search.git"
+  },
+  "author": "Vinicius Meneses <vini23hot@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vini23hot/food-search/issues"
+  },
+  "homepage": "https://github.com/vini23hot/food-search#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-environment": "^1.5.2",
+    "gulp-htmlhint": "^2.2.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1",
+    "gulp-watch": "^5.0.1",
+    "jshint": "^2.9.6",
+    "lodash": "^4.17.11",
+    "minimatch": "^3.0.4"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
