@@ -3,6 +3,7 @@ const concat = require('gulp-concat')
 const env = require('gulp-environment')
 const watch = require('gulp-watch')
 const rename = require('gulp-rename')
+const wait = require('gulp-wait')
 
 const cleancss = require('gulp-clean-css')
 const htmlmin = require('gulp-htmlmin')
@@ -20,7 +21,7 @@ const nodemon = require('gulp-nodemon')
 
 gulp.task('default', ['html', 'scss', 'js', 'img'], () => {
   if (env.is.development()) {
-    gulp.start('frontend')
+    gulp.start('front-end')
   }
 })
 
@@ -36,6 +37,7 @@ gulp.task('html', () => {
 
 gulp.task('scss', () => {
   return gulp.src('src/assets/scss/index.scss')
+    .pipe(wait(500))
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('style.min.css'))
     .pipe(cleancss())
@@ -63,7 +65,7 @@ gulp.task('img', () => {
     .pipe(gulp.dest('public/assets/img'))
 })
 
-gulp.task('backend', () => {
+gulp.task('back-end', () => {
   return nodemon({
     script: 'server/app.js'
   })
@@ -73,10 +75,10 @@ gulp.task('watch', () => {
   watch('src/**/*.html', () => gulp.start('html'))
   watch('src/assets/scss/**/*.scss', () => gulp.start('scss'))
   watch('src/assets/js/**/*.js', () => gulp.start('js'))
-  watch('src/assets/imgs/**/*.*', () => gulp.start('img'))
+  watch('src/assets/img/**/*.*', () => gulp.start('img'))
 })
 
-gulp.task('frontend', ['backend', 'watch'], () => {
+gulp.task('front-end', ['back-end', 'watch'], () => {
   return gulp.src('public')
     .pipe(webserver({
       livereload: {
