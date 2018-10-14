@@ -4,7 +4,7 @@
   "description": "",
   "main": "server/app.js",
   "scripts": {
-    "dev": "node server/app.js && gulp --env=dev",
+    "dev": "gulp --env=dev",
     "build": "gulp"
   },
   "repository": {
