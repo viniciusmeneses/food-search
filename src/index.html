@@ -4,21 +4,25 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Simple Gulp Boilerplate</title>
+  <title>food-search</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="assets/img/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 
 <body>
   <header>
-    <h1>food-search</h1>
-    <h2>description</h2>
+    <h1 class="title">food-search</h1>
+    <h2 class="subtitle">Discover the nutritional information of any food or recipe!</h2>
     <form method="get" id="search">
-      <input>
-      <input>
-      <button type="submit"></button>
+      <select>
+        <option>Food</option>
+        <option>Recipe</option>
+      </select>
+      <input placeholder="Type a food or a recipe...">
+      <button type="submit">SEARCH</button>
     </form>
   </header>
   <section>

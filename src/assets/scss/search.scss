@@ -1,0 +1,30 @@
+#search {
+  display: flex;
+  padding: 10px;
+  background-color: #00000033;
+  flex-wrap: wrap;
+
+  select, input {
+    height: 40px;
+    border: none;
+    padding: 0 5px;
+    font-family: $font;
+    font-size: 15px;
+    color: #383838;
+    margin: 0 10px 0 0;
+    width: 300px;
+  }
+
+  select {
+    width: 100px;
+  }
+
+  button {
+    border: none;
+    background-color: $primary-color;
+    font-family: $font;
+    font-weight: 700;
+    color: $secondary-color;
+    width: 150px;
+  }
+}
