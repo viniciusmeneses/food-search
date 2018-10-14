@@ -15,9 +15,12 @@ const sass = require('gulp-sass')
 const jshint = require('gulp-jshint');
 const htmlhint = require("gulp-htmlhint")
 
+const webserver = require('gulp-webserver')
+const nodemon = require('gulp-nodemon')
+
 gulp.task('default', ['html', 'scss', 'js', 'img'], () => {
   if (env.is.development()) {
-    gulp.start('watch')
+    gulp.start('frontend')
   }
 })
 
@@ -60,9 +63,26 @@ gulp.task('img', () => {
     .pipe(gulp.dest('public/assets/img'))
 })
 
+gulp.task('backend', () => {
+  return nodemon({
+    script: 'server/app.js'
+  })
+})
+
 gulp.task('watch', () => {
   watch('src/**/*.html', () => gulp.start('html'))
   watch('src/assets/scss/**/*.scss', () => gulp.start('scss'))
   watch('src/assets/js/**/*.js', () => gulp.start('js'))
   watch('src/assets/imgs/**/*.*', () => gulp.start('img'))
+})
+
+gulp.task('frontend', ['backend', 'watch'], () => {
+  return gulp.src('public')
+    .pipe(webserver({
+      livereload: {
+        enable: true
+      },
+      port: 8080,
+      open: true
+    }))
 })

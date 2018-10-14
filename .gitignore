@@ -14,6 +14,7 @@ node_modules/
 .eslintcache
 
 build/
+public/
 dist/
 
 package-lock.json

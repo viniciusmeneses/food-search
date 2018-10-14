@@ -4,7 +4,7 @@
   "description": "",
   "main": "server/app.js",
   "scripts": {
-    "dev": "gulp --env=dev",
+    "dev": "node server/app.js && gulp --env=dev",
     "build": "gulp"
   },
   "repository": {
@@ -29,10 +29,12 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^4.1.0",
     "gulp-jshint": "^2.1.0",
+    "gulp-nodemon": "^2.2.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.1",
     "gulp-watch": "^5.0.1",
+    "gulp-webserver": "^0.9.1",
     "jshint": "^2.9.6",
     "lodash": "^4.17.11",
     "minimatch": "^3.0.4"
