@@ -6,6 +6,12 @@ $font: 'Nunito', sans-serif;
 
 $bg-dark-transparent: #00000033;
 
+$max-width-lg: 1200px;
+$max-width-mobile: 720px;
+$max-width-mobile-md: 650px;
+$max-width-mobile-sm: 500px;
+$max-width-mobile-xs: 400px;
+
 @import 'layout';
 @import 'title';
 @import 'search';

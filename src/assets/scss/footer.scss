@@ -20,4 +20,18 @@ footer {
   div#edaman-badge {
     margin-top: 5px;
   }
+
+  @media (max-width: $max-width-mobile-xs) {
+    a {
+      margin: 10px 0 10px 0;
+    }
+  }
+}
+
+@media (max-width: $max-width-mobile-xs) {
+  footer {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }

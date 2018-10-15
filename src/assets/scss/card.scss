@@ -1,5 +1,5 @@
 .card {
-  width: 20vw;
+  width: 300px;
   background-color: $secondary-color;
   display: flex;
   min-height: 218px;
@@ -16,6 +16,9 @@
 
     h3 {
       margin: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
     h4 {
       margin: 0;
@@ -45,9 +48,24 @@
 
     p {
       margin: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
   }
 }
 .card:hover {
   background-color: lighten($primary-color, 30);
+}
+
+@media (max-width: $max-width-mobile) {
+  .card {
+    width: 40vw;
+  }
+}
+
+@media (max-width: $max-width-mobile-sm) {
+  .card {
+    width: 80vw;
+  }
 }

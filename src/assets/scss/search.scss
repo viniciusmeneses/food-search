@@ -4,7 +4,7 @@
   background-color: $bg-dark-transparent;
   flex-wrap: wrap;
 
-  select, input {
+  input {
     height: 40px;
     border: none;
     padding: 0 5px;
@@ -12,11 +12,9 @@
     font-size: 15px;
     color: $text-color-dark;
     margin: 0 10px 0 0;
-    width: 300px;
-  }
-
-  select {
-    width: 100px;
+    width: 30vw;
+    min-width: 360px;
+    transition: all 0.5s ease;
   }
 
   button {
@@ -32,5 +30,35 @@
 
   button:hover {
     background-color: darken($primary-color, 5);
+  }
+
+  @media (max-width: $max-width-mobile-md) {
+    input {
+      width: calc(80vw - 165px);
+      min-width: 0;
+    }
+  }
+
+  @media (max-width: $max-width-mobile-sm) {
+    input {
+      width: calc(80vw - 15px);
+      min-width: 0;
+      margin: 0 0 10px 0;
+      height: 30px;
+    }
+    button {
+      width: calc(80vw - 15px);
+      height: 30px;
+    }
+  }
+}
+
+@media (max-width: $max-width-mobile-sm) {
+  #search {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
   }
 }

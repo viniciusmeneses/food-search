@@ -3,9 +3,10 @@
 }
 body {
   margin: 0;
-  background-image: url('../img/background.png');
+  background-image: url('../img/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: calc(50vh - 75px) minmax(calc(50vh - 75px), 1fr) 50px;
@@ -18,4 +19,10 @@ header, section {
 }
 header {
   justify-content: flex-end;
+}
+
+@media (max-width: $max-width-mobile-xs) {
+  body {
+    grid-template-rows: calc(50vh - 94px) minmax(calc(50vh - 94px), 1fr) 88px;
+  }
 }

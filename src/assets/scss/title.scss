@@ -11,6 +11,15 @@
   margin: 0;
   font-weight: 300;
   font-size: 1.3em;
-  margin-bottom: 30px;
   text-align: center;
+  margin: 0 20px 30px 20px;
+}
+
+@media (max-width: $max-width-mobile-xs) {
+  .title {
+    font-size: 10vw;
+  }
+  .subtitle {
+    font-size: 5vw;
+  }
 }

@@ -48,7 +48,7 @@ gulp.task('js', () => {
   return gulp.src('src/assets/js/*.js')
     .pipe(jshint())
     .pipe(jshint.reporter('default', { verbose: true }))
-    .pipe(jshint.reporter('fail'))
+    // .pipe(jshint.reporter('fail'))
     .pipe(babel({
       presets: ['@babel/env']
     }))

@@ -15,36 +15,14 @@
 <body>
   <header>
     <h1 class="title">food-search</h1>
-    <h2 class="subtitle">Discover the nutritional information of any food or recipe!</h2>
-    <form method="get" id="search">
-      <select>
-        <option>Food</option>
-        <option>Recipe</option>
-      </select>
-      <input placeholder="Type a food or a recipe...">
+    <h2 class="subtitle">Discover the nutritional information of 700,000+ foods!</h2>
+    <form id="search" name="search">
+      <input name="name" placeholder="Type a food or a meal...">
       <button type="submit">SEARCH</button>
     </form>
   </header>
   <section>
-    <div id="result">
-      <div class="card">
-        <div class="card-header">
-          <h3>Banana</h3>
-          <h4>Package foods</h4>
-        </div>
-        <div class="card-body">
-          <ul>
-            <li><b>Energy: </b><span>400kcal</span></li>
-            <li><b>Carbs: </b><span>27.2g</span></li>
-            <li><b>Protein: </b><span>20g</span></li>
-            <li><b>Fat: </b><span>5.6g</span></li>
-          </ul>
-        </div>
-        <div class="card-footer">
-          <p><b>Brand: </b><span>None :(</span></p>
-        </div>
-      </div>
-    </div>
+    <div id="result"></div>
   </section>
   <footer>
     <a href="https://github.com/vini23hot/food-search">Github Repository</a>
