@@ -8,7 +8,7 @@ body {
   background-size: cover;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50vh 1fr;
+  grid-template-rows: calc(50vh - 75px) minmax(calc(50vh - 75px), 1fr) 50px;
   grid-gap: 50px;
 }
 header, section {

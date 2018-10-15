@@ -1,7 +1,7 @@
 #search {
   display: flex;
   padding: 10px;
-  background-color: #00000033;
+  background-color: $bg-dark-transparent;
   flex-wrap: wrap;
 
   select, input {
@@ -27,6 +27,7 @@
     color: $secondary-color;
     width: 150px;
     transition: all 0.2s ease;
+    height: 40px;
   }
 
   button:hover {

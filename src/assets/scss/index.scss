@@ -4,8 +4,11 @@ $secondary-color: #ededed;
 $text-color-dark: #383838;
 $font: 'Nunito', sans-serif;
 
+$bg-dark-transparent: #00000033;
+
 @import 'layout';
 @import 'title';
 @import 'search';
 @import 'result';
 @import 'card';
+@import 'footer';
