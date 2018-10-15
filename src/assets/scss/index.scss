@@ -1,8 +1,11 @@
 $primary-color: #ff4958;
 $secondary-color: #ededed;
 
+$text-color-dark: #383838;
 $font: 'Nunito', sans-serif;
 
 @import 'layout';
 @import 'title';
 @import 'search';
+@import 'result';
+@import 'card';

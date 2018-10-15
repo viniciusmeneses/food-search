@@ -10,7 +10,7 @@
     padding: 0 5px;
     font-family: $font;
     font-size: 15px;
-    color: #383838;
+    color: $text-color-dark;
     margin: 0 10px 0 0;
     width: 300px;
   }
@@ -26,5 +26,10 @@
     font-weight: 700;
     color: $secondary-color;
     width: 150px;
+    transition: all 0.2s ease;
+  }
+
+  button:hover {
+    background-color: darken($primary-color, 5);
   }
 }

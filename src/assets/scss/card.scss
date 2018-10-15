@@ -1,0 +1,52 @@
+.card {
+  width: 20vw;
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+
+
+  .card-header {
+    padding: 10px;
+    height: auto;
+    margin: 0;
+    background-color: $primary-color;
+    color: $secondary-color;
+
+    h3 {
+      margin: 0;
+    }
+    h4 {
+      margin: 0;
+      font-weight: 300;
+      font-size: 0.9em;
+    }
+  }
+
+  .card-body {
+    color: $text-color-dark;
+    padding: 10px;
+    flex-grow: 10;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+  }
+
+  .card-footer {
+    color: $text-color-dark;
+    padding: 10px;
+    height: auto;
+    margin: 0;
+    border-top: 2px dashed $primary-color;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+.card:hover {
+  background-color: lighten($primary-color, 30);
+}

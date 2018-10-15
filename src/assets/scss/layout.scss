@@ -1,23 +1,15 @@
 * {
   box-sizing: border-box;
 }
-html {
-  height: 100vh;
-}
 body {
   margin: 0;
   background-image: url('../img/background.png');
   background-repeat: no-repeat;
   background-size: cover;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  height: 100%;
-  grid-gap: 30px;
+  grid-template-rows: 50vh 1fr;
+  grid-gap: 50px;
 }
 header, section {
   display: flex;
