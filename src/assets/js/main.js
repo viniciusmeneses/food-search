@@ -4,9 +4,11 @@
   function initEvent() {
     document.querySelector('#search').addEventListener('submit', function(e) {
       e.preventDefault()
-      result.innerHTML = ''
-      changeTextButton(e.target[1], 'SEARCHING...')
-      search(e.target)
+      if (e.target[0].value) {
+        result.innerHTML = ''
+        changeTextButton(e.target[1], 'SEARCHING...')
+        search(e.target)
+      }
     }, false)
   }
 
