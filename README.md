@@ -28,6 +28,6 @@ npm run dev
 npm run build
 ```
 
----
-
-![5bc60bad90bef](https://i.loli.net/2018/10/17/5bc60bad90bef.png)
+<p align="center">
+  <img src="https://i.loli.net/2018/10/17/5bc60bad90bef.png">
+</p>
