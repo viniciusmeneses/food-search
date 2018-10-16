@@ -2,7 +2,7 @@
 
 > Discover the nutritional information of 700,000+ foods!
 
-**food-search** is a *open-source* project which uses the [Edaman API](https://developer.edamam.com/) to browse and retrieve the nutritional information and brand of any food or meal searched. The API contains a [Food Database](https://developer.edamam.com/food-database-api) with over 700,000 foods, restaurant items, fast foods and package foods.
+**food-search** is a *open-source* project which uses [Edaman API](https://developer.edamam.com/) to browse and retrieve the nutritional information and brand of any food or meal searched. The API contains a [Food Database](https://developer.edamam.com/food-database-api) with over 700,000 foods, restaurant items, fast foods and package foods.
 
 ## Using
 
@@ -24,7 +24,7 @@ Run one of the following commands to start use **food-search**:
 // Build and starts front-end and back-end servers
 npm run dev
 
-// Build the application
+// Builds the application only
 npm run build
 ```
 
