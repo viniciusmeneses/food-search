@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vini23hot/food-search.git"
+    "url": "git+https://github.com/viniciusmeneses/food-search.git"
   },
   "author": "Vinicius Meneses <vini23hot@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vini23hot/food-search/issues"
+    "url": "https://github.com/viniciusmeneses/food-search/issues"
   },
-  "homepage": "https://github.com/vini23hot/food-search#readme",
+  "homepage": "https://github.com/viniciusmeneses/food-search#readme",
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",

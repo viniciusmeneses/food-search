@@ -9,7 +9,7 @@
 First of all, you need to clone or download this repository.
 
 ```
-git clone https://github.com/vini23hot/food-search
+git clone https://github.com/viniciusmeneses/food-search
 ```
 
 Go to the **food-search** folder and install the dependencies
