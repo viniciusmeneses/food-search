@@ -33,5 +33,5 @@ npm run build
 ```
 
 <p align="center">
-  <a href="https://developer.edamam.com/"><img src="https://i.loli.net/2018/10/17/5bc60bad90bef.png"></a>
+  <a href="https://developer.edamam.com/"><img src="https://imgur.com/xUqNOOo.png"></a>
 </p>
