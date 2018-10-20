@@ -5,8 +5,7 @@
 **food-search** is a *open-source* project which uses [Edaman API](https://developer.edamam.com/) to browse and retrieve the nutritional information and brand of any food or meal searched. The API contains a [Food Database](https://developer.edamam.com/food-database-api) with over 700,000 foods, restaurant items, fast foods and package foods.
 
 <p align="center">
-    <img src="https://imgur.com/g0o04eM.jpg">
-  <img src="https://imgur.com/G091HiW.jpg">
+  <img src="https://imgur.com/gEpUEZA.jpg">
 </p>
 
 ## Using
