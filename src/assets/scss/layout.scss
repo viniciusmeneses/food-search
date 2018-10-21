@@ -9,7 +9,7 @@ body {
   background-attachment: fixed;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: calc(50vh - 75px) minmax(calc(50vh - 75px), 1fr) 50px;
+  grid-template-rows: minmax(0px, calc(50vh - 75px)) minmax(calc(50vh - 75px), 1fr) 50px;
   grid-gap: 50px;
 }
 header, section {
@@ -23,6 +23,6 @@ header {
 
 @media (max-width: $max-width-mobile-xs) {
   body {
-    grid-template-rows: calc(50vh - 94px) minmax(calc(50vh - 94px), 1fr) 88px;
+    grid-template-rows: minmax(230px, calc(50vh - 94px)) minmax(calc(50vh - 94px), 1fr) 88px;
   }
 }
