@@ -16,5 +16,3 @@ node_modules/
 build/
 public/
 dist/
-
-package-lock.json
