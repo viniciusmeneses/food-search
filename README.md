@@ -7,7 +7,7 @@
 [**Demo available here!**](http://food-search.surge.sh)
 
 <p align="center">
-  <img src="https://imgur.com/gEpUEZA.jpg">
+  <img src="preview.jpg">
 </p>
 
 ## Using
